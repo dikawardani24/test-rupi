@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="?attr/actionBarSize"
+        tools:ignore="HardcodedText, UseCompoundDrawables, ContentDescription"
+        tools:context=".ui.activity.main.ui.dashboard.DashboardFragment">
+
+        <include
+            android:id="@+id/noDataContainer"
+            layout="@layout/no_data"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/loadingContainer"
+            layout="@layout/loading_data"
+            android:visibility="visible" />
+
+        <include
+            android:id="@+id/profileContainer"
+            layout="@layout/content_profile"
+            android:visibility="gone" />
+
+    </FrameLayout>
+</layout>
